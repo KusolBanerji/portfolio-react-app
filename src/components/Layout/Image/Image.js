@@ -1,4 +1,4 @@
-import Photo from '../media_files/Photo1-1.jpg'
+import Photo from '../../../media_files/Photo1-1.jpg'
 import './Image.css'
 
 const Image = () => {
