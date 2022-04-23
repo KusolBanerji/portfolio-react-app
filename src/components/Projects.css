@@ -1,0 +1,21 @@
+.project{
+    float: right;
+    width: 87%;
+    min-height: 100%;
+    background-color: #2C3031;
+}
+
+.project-container {
+    padding-top: 2.5%;
+    padding-left: 10%;
+    width: 77%;
+    min-height: 100vh;
+    background-color: #2C3031;
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 900px) {
+	.project {
+		width: 100%;
+	}
+}

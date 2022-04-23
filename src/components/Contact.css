@@ -1,0 +1,72 @@
+.contact{
+    float: right;
+    width: 87%;
+    min-height: 100%;
+    background-color: #2C3031;
+}
+
+.contact-container {
+    padding-top: 2.5%;
+    padding-left: 10%;
+    width: 77%;
+    min-height: 100vh;
+    background-color: #2C3031;
+    color: whitesmoke;
+    bottom: 0px;
+}
+.contact-div {
+    text-align:center;
+    padding-top:3%;
+}
+.contact-div input[type=text], textarea, .contact-div div {
+    background-color: #2C3031;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+.contact-div input[type=text] {
+    width: 30%;
+    border: 1px solid #ccc;
+}
+.contact-div div {
+    width: 3%;
+}
+textarea {
+    width: 64%;
+    height: 20vh;
+    border: 1px solid #ccc;
+}
+.contact-div input[type=text]::placeholder{
+    color: #ccc;
+}
+.contact-div textarea::placeholder{
+    color: #ccc;
+}
+hr {
+    border: 1px dashed white;
+}
+.button {
+    background-color: #2C3031; /* Green */
+    border: 1px solid white;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover{
+    color: #2C3031;
+    background-color: white;
+}
+
+@media only screen and (max-width: 900px) {
+	.contact {
+		width: 100%;
+	}
+}

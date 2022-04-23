@@ -30,8 +30,8 @@ const LargeLayout = () => {
               <hr />
             </li>
             <li>
-              <NavLink className="link" to="portfolio">
-                <label>&#128188;</label> Portfolio
+              <NavLink className="link" to="projects">
+                <label>&#128188;</label> Projects
               </NavLink>
               <hr />
             </li>

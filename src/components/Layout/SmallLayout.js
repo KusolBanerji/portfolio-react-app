@@ -4,11 +4,11 @@ import "./SmallLayout.css"
 const SmallLayout = () => {
     return (
       <div className="topnav">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="about">About Me</NavLink>
-        <NavLink to="resume">Resume</NavLink>
-        <NavLink to="portfolio">Portfolio</NavLink>
-        <NavLink to="contact">Contact</NavLink>
+        <NavLink to="/">&#127968;Home</NavLink>
+        <NavLink to="about">&#128102;&#127995;About Me</NavLink>
+        <NavLink to="resume">&#128203;Resume</NavLink>
+        <NavLink to="projects">&#128188;Projects</NavLink>
+        <NavLink to="contact">&#128241;Contact</NavLink>
       </div>
     )
 }
