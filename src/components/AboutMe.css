@@ -14,8 +14,46 @@
     color: whitesmoke;
 }
 
+.about-info {
+    display: inline-block;
+}
+
+#summary{
+    width: 60%;
+}
+
+#personal-info {
+    width: 40%;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 200%;
+}
+
+.services {
+    width: 100%;
+    text-align: center;
+}
+
 @media only screen and (max-width: 900px) {
 	.about {
 		width: 100%;
 	}
+}
+
+@media only screen and (max-width: 710px) {
+	.about-info {
+		display: block;
+	}
+    #summary{
+        width: 100%;
+    }
+    #personal-info {
+        width: 100%;
+    }
 }
