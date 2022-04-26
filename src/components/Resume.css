@@ -14,8 +14,61 @@
     color: whitesmoke;
 }
 
+.resume-info {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+#left-panel{
+    width: 50%;
+}
+
+#right-panel {
+    width: 50%;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+.resume-info p {
+    font-size: 20px;
+}
+
+.experience {
+    width: 100%;
+    text-align: left;
+}
+
+.exp-child {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.exp-child ul {
+    list-style: none;
+}
+
+.exp-child li {
+    text-align: left;
+}
+
 @media only screen and (max-width: 900px) {
 	.resume {
 		width: 100%;
 	}
+}
+
+@media only screen and (max-width: 780px) {
+	.resume-info {
+		display: block;
+	}
+    #left-panel{
+        width: 100%;
+    }
+    #right-panel {
+        width: 100%;
+    }
 }

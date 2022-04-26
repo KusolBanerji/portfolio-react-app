@@ -32,6 +32,7 @@ const AboutMe = () => {
                         </p>
                     </div>
                 </div>
+                <br/><br/>
                 <div className="services">
                     <h2>Services</h2>
                     <div>
