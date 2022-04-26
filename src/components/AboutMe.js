@@ -17,7 +17,8 @@ const AboutMe = () => {
                             Strong in design and integration with intuitive problem-solving skills. 
                             Proficient in JAVA, PYTHON, JAVASCRIPT, SQL and NOSQL. Passionate 
                             about implementing and launching new projects. Ability to translate business 
-                            requirements into technical solutions.
+                            requirements into technical solutions. Continuous learner of new technologies, 
+                            strategies, and tools.
                         </p>
                     </div>
                     <div className="about-info" id="personal-info">
@@ -33,6 +34,32 @@ const AboutMe = () => {
                 </div>
                 <div className="services">
                     <h2>Services</h2>
+                    <div>
+                        <div className="services-div">
+                            <label>📰</label>
+                            <h3>Web Development</h3>
+                            <p>
+                                Create visually appealing, brand strengthening 
+                                digital interfaces that attract users.
+                            </p>
+                        </div>
+                        <div className="services-div">
+                            <label>💻</label>
+                            <h3>Backend Development</h3>
+                            <p>
+                                Build extensible back-end solutions that 
+                                scale together business needs.
+                            </p>
+                        </div>
+                        <div className="services-div">
+                            <label>✨</label>
+                            <h3>Responsive Design</h3>
+                            <p>
+                                Make applications smart enough to resize 
+                                and adapt its content based on screen size.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
