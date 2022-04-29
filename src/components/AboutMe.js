@@ -13,7 +13,7 @@ const AboutMe = () => {
                 <div>
                     <div className="about-info" id="summary">
                         <h2>Software Engineer</h2>
-                        <p>
+                        <p Style="padding-right:5%;">
                             Strong in design and integration with intuitive problem-solving skills. 
                             Proficient in JAVA, PYTHON, JAVASCRIPT, SQL and NOSQL. Passionate 
                             about implementing and launching new projects. Ability to translate business 

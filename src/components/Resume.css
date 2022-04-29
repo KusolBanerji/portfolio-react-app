@@ -14,51 +14,101 @@
     color: whitesmoke;
 }
 
+.res {
+    width: 80%;
+    text-align: center;
+    vertical-align: top;
+    padding-left: 10%;
+}
+
 .resume-info {
     display: inline-block;
     text-align: center;
     vertical-align: top;
+    padding-bottom: 5%;
 }
 
 #left-panel{
-    width: 50%;
+    width: 48%;
 }
 
 #right-panel {
     width: 50%;
+    float: right;
 }
 
 h2 {
     font-size: 26px;
+    text-decoration: underline;
+    text-decoration-color: rgb(166, 100, 228);
 }
 
 .resume-info p {
     font-size: 20px;
+    height: 100%;
+}
+
+.left {
+    text-align: left;
+}
+
+.left h3 {
+    font-size: 22px;
 }
 
 .experience {
     width: 100%;
-    text-align: left;
+    text-align: justify;
+}
+
+.experience:hover {
+    border: rgba(255, 255, 255, 0.5) solid;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 .exp-child {
-    width: 50%;
+    width: 45%;
     display: inline-block;
     vertical-align: top;
+    padding-left: 1%;
 }
 
-.exp-child ul {
+.exp-child p {
+    font-size: 18px;
+}
+
+.ul {
     list-style: none;
+    text-align: left;
+    font-size: 18px;
 }
 
-.exp-child li {
-    text-align: left;
+.ul li {
+    padding-right: 10%;
+    width: 100%;
+}
+
+.ul li:hover {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ul li:hover label{
+    letter-spacing: 3px;
+}
+
+.ul * {
+    float: right;
 }
 
 @media only screen and (max-width: 900px) {
 	.resume {
 		width: 100%;
 	}
+    .res {
+        width: 100%;
+        padding-left: 0%;
+    }
 }
 
 @media only screen and (max-width: 780px) {
