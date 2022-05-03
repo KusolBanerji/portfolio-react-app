@@ -1,11 +1,10 @@
-import Photo from '../../../media_files/Photo1-1.jpg'
 import './Image.css'
 
-const Image = () => {
+const Image = (props) => {
     return (
         <div className='container'>
-            <img Style="width: 100%; height: 20%;" src={Photo} alt="My Pic"/>
-            <h4 className='centered'>KUSOL BANERJI</h4>
+            <img Style="width: 100%; height: 20%;" src={props.photo} alt="My Pic"/>
+            <h4 className='centered'>{props.txt}</h4>
         </div>
     )
 }

@@ -2,12 +2,13 @@ import { NavLink, Link } from "react-router-dom";
 import Image from "./Image/Image";
 import Layout from "./Layout";
 import "./LargeLayout.css"
+import Photo from '../../media_files/Photo1-1.jpg'
 
 const LargeLayout = () => {
   return (
     <div className="main-div">
       <div className="layout">
-        <Image />
+        <Image photo={Photo} txt="KUSOL BANERJI"/>
 
         <nav>
           <ul className="layout-ul">

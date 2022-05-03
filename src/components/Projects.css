@@ -14,8 +14,46 @@
     color: whitesmoke;
 }
 
+.project-container .container {
+    width: 31%;
+    display: inline-block;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+.project-container .centered {
+    width: 94%;
+    height: 48%;
+    background-color: rgba(134, 137, 193, 0.65);
+    position: absolute;
+    top: 34%;
+    left: 46.8%;
+    transform: translate(-50%, -50%);
+    display: none;
+    cursor: pointer;
+    padding-top: 29%;
+}
+
+.project-container .container:hover .centered{
+    display: inline;
+}
+
 @media only screen and (max-width: 900px) {
 	.project {
 		width: 100%;
 	}
+    .project-container .container {
+        display: block;
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    .project-container .centered {
+        width: 98%;
+        height: 50%;
+        top: 38.5%;
+        left: 49%;
+        font-size: 3vw;
+        transform: translate(-50%, -50%);
+        padding-top: 30%;
+    }
 }
