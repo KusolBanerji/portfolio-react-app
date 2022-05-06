@@ -2,6 +2,37 @@ import "./Resume.css";
 import ResumePic from '../media_files/resume-logo.png'
 
 const Resume = () => {
+    var experiences = [
+        {org: 'Persistent Systems', loc:'Pune, Maharashtra, India', duration: 'Jan 2022 - Present', role: 'UI - React Developer Intern', desc: 'Prepared User Interface with React Framework. Used React Hooks and Redux to use local component states, execute side effects and more. Developed backend server using Node Js and Express Js. Created NoSQL(MongoDb) database server using Mongoose.', tech: 'HTML, CSS, JavaScript, React Framework, Node Js, MongoDb'},
+        {org: 'Whoogly Pvt. Ltd.', loc:'Virtual', duration: 'Aug 2020 - Sep 2020', role: 'Backend(PHP) Developer Intern', desc: 'Implemented backend server using PHP. Merged frontend design with the backend. Made database operations(CRUD) in MySQL using PHP.', tech: 'PHP, MySQL'}
+    ]
+    var educations = [
+        {institute: 'Academy of Technology', loc: 'West Bengal, India', duration: 'Aug 2018 - Jul 2022', degree: 'Bachelor of Technology(B. Tech.)', specialization: 'Electronics and Communication Engineering(ECE)', score: 9.35, extra: '(upto 7th Semester)'}
+    ]
+    var skills = [
+        {name: 'Java', rate: 5, src: require('../media_files/skills-logo/java.png')},
+        {name: 'JavaScript', rate: 5, src: require('../media_files/skills-logo/javascript.png')},
+        {name: 'Python', rate: 5, src: require('../media_files/skills-logo/python.png')},
+        {name: 'C/C++', rate: 5, src: require('../media_files/skills-logo/c++.png')},
+        {name: 'Flask', rate: 4, src: require('../media_files/skills-logo/flask.png')},
+        {name: 'Oracle', rate: 5, src: require('../media_files/skills-logo/oracle.png')},
+        {name: 'MongoDb', rate: 5, src: require('../media_files/skills-logo/mongodb.png')},
+        {name: 'Express JS', rate: 5, src: require('../media_files/skills-logo/express.png')},
+        {name: 'React JS', rate: 5, src: require('../media_files/skills-logo/react.png')},
+        {name: 'Node JS', rate: 5, src: require('../media_files/skills-logo/nodejs.png')},
+        {name: 'HTML', rate: 5, src: require('../media_files/skills-logo/html.png')},
+        {name: 'CSS3', rate: 5, src: require('../media_files/skills-logo/css.png')},
+        {name: 'Bootstrap', rate: 3, src: require('../media_files/skills-logo/bootstrap.png')}
+    ]
+    var tools = [
+        {name: 'Visual Studio', rate: 5, src: require('../media_files/tools-logo/visualstudio.png')},
+        {name: 'Eclipse', rate: 5, src: require('../media_files/tools-logo/eclipse.png')},
+        {name: 'Spyder', rate: 5, src: require('../media_files/tools-logo/spyder.png')},
+        {name: 'Jupyter Notebook', rate: 5, src: require('../media_files/tools-logo/jupyter.png')},
+        {name: 'Git', rate: 5, src: require('../media_files/tools-logo/git.png')},
+        {name: 'Robo3T', rate: 4, src: require('../media_files/tools-logo/robo3t.png')},
+        {name: 'Postman', rate: 4, src: require('../media_files/tools-logo/postman.png')},
+    ]
     return (
         <div className="resume">
             <div className="resume-container">
@@ -13,64 +44,47 @@ const Resume = () => {
                 <div>
                     <div className="res">
                         <h2>Experience</h2>
-                        <div className="experience">
-                            <div className="exp-child left">
-                                <h3>Persistent Systems</h3>
-                                <p>📍Pune, Maharashtra, India</p>
-                                <p>Jan 2022 - Present</p>
+                        {
+                            experiences.map((each) => <div className="experience">
+                                <div className="exp-child left">
+                                    <h3>{each.org}</h3>
+                                    <p>📍{each.loc}</p>
+                                    <p>{each.duration}</p>
+                                </div>
+                                <div className="exp-child disp">
+                                    <h3>{each.role}</h3>
+                                    <p>
+                                        {each.desc}
+                                    </p>
+                                    <p>
+                                        Technologies used - {each.tech}.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="exp-child disp">
-                                <h3>UI - React Developer Intern</h3>
-                                <p>
-                                    Prepared User Interface with React Framework.
-                                    Used React Hooks and Redux to use local component states, execute side effects and more.
-                                    Developed backend server using Node Js and Express Js.
-                                    Created NoSQL(MongoDb) database server using Mongoose.
-                                </p>
-                                <p>
-                                    Technologies used - HTML, CSS, JavaScript, React Framework, Node Js, MongoDb.
-                                </p>
-                            </div>
-                        </div>
-                        <br/>
-                        <div className="experience">
-                            <div className="exp-child left">
-                                <h3>Whoogly Pvt. Ltd.</h3>
-                                <p>📍Virtual</p>
-                                <p>Aug 2020 - Sep 2020</p>
-                            </div>
-                            <div className="exp-child disp">
-                                <h3>Backend(PHP) Developer Intern</h3>
-                                <p>
-                                    Implemented backend server using PHP.
-                                    Merged frontend design with the backend.
-                                    Made database operations(CRUD) in MySQL using PHP.
-                                </p>
-                                <p>
-                                    Technologies used - PHP, MySQL.
-                                </p>
-                            </div>
-                        </div>
-                        <br/>
+                            )
+                        }
                     </div>
                     <div className="res">
                         <h2>Education</h2>
-                        <div className="experience">
-                            <div className="exp-child left">
-                                <h3>Academy of Technology</h3>
-                                <p>📍West Bengal, India</p>
-                                <p>Aug 2018 - Jul 2022</p>
+                        {
+                            educations.map((each) => <div className="experience">
+                                <div className="exp-child left">
+                                    <h3>{each.institute}</h3>
+                                    <p>📍{each.loc}</p>
+                                    <p>{each.duration}</p>
+                                </div>
+                                <div className="exp-child disp">
+                                    <h3>{each.degree}</h3>
+                                    <p>
+                                        {each.specialization}
+                                    </p>
+                                    <p>
+                                        C.G.P.A. : {each.score} {each.extra}
+                                    </p>
+                                </div>
                             </div>
-                            <div className="exp-child disp">
-                                <h3>Bachelor of Technology(B. Tech.)</h3>
-                                <p>
-                                    Specialization : Electronics and Communication Engineering(ECE)
-                                </p>
-                                <p>
-                                    C.G.P.A. : 9.35 (upto 7th Semester)
-                                </p>
-                            </div>
-                        </div>
+                            )
+                        }
                     </div>
                 </div>
                 <br/><br/><br/>
@@ -78,31 +92,27 @@ const Resume = () => {
                     <div className="resume-info" id="left-panel">
                         <h2>Skills</h2>
                         <ul className="ul">
-                            <li>Java<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>JavaScript<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>Python<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>C/C++<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>Flask<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>Oracle SQL<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>MongoDb<label>&#9733;&#9733;&#9733;&#9733;&#9734;</label></li>
-                            <li>Express JS<label>&#9733;&#9733;&#9733;&#9733;&#9734;</label></li>
-                            <li>React JS<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>Node JS<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>HTML<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>CSS3<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>Bootstrap<label>&#9733;&#9733;&#9733;&#9733;&#9734;</label></li>
+                            {
+                                skills.map((each) => {
+                                    let whiteStar = '&#9733;'.repeat(each.rate)
+                                    let blackStar = '&#9734;'.repeat(5-each.rate)
+                                    let innerHtml = whiteStar+blackStar
+                                    return <li><div Style="width:10%"><img className="img" src={each.src} alt="Skill"/></div>{each.name}<label dangerouslySetInnerHTML={{__html: innerHtml}}></label></li>
+                                })
+                            }
                         </ul>
                     </div>
                     <div className="resume-info" id="right-panel">
                         <h2>Tools</h2>
                         <ul className="ul">
-                            <li>Visual Studio<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>Eclipse<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>Spyder<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>Jupyter Notebook<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>Git<label>&#9733;&#9733;&#9733;&#9733;&#9733;</label></li>
-                            <li>Robo3T<label>&#9733;&#9733;&#9733;&#9733;&#9734;</label></li>
-                            <li>Postman<label>&#9733;&#9733;&#9733;&#9733;&#9734;</label></li>
+                            {
+                                tools.map((each) => {
+                                    let whiteStar = '&#9733;'.repeat(each.rate)
+                                    let blackStar = '&#9734;'.repeat(5-each.rate)
+                                    let innerHtml = whiteStar+blackStar
+                                    return <li><div Style="width:10%"><img className="img" src={each.src} alt="Skill"/></div>{each.name}<label dangerouslySetInnerHTML={{__html: innerHtml}}></label></li>
+                                })
+                            }
                         </ul>
                     </div>
                 </div>

@@ -12,7 +12,7 @@ const Home = () => {
         <div className="typewriter">
           <h1><span Style="color:orange;">FULL STACK</span> DEVELOPER</h1>
           <h1><span Style="color:orange;">FRONT-END</span> SKILLS : <span Style="color:green;">REACT</span></h1>
-          <h1><span Style="color:orange;">BACK-END</span> SKILLS : <span Style="color:green;">JAVA, NODE JS, PYTHON</span></h1>
+          <h1><span Style="color:orange;">BACK-END</span> SKILLS : <span Style="color:green;">JAVA, NODE JS, FLASK</span></h1>
         </div>
       </div>
     </div>

@@ -2,10 +2,10 @@ import "./Projects.css";
 import Image from './Layout/Image/Image'
 
 import Project from '../media_files/project-logo.png'
-import Photo1 from '../media_files/project1.jpg'
-import Photo2 from '../media_files/project2.jpeg'
-import Photo3 from '../media_files/project3.JPG'
-import Photo4 from '../media_files/project4.JPG'
+import Photo1 from '../media_files/projects-img/project1.jpg'
+import Photo2 from '../media_files/projects-img/project2.jpeg'
+import Photo3 from '../media_files/projects-img/project3.JPG'
+import Photo4 from '../media_files/projects-img/project4.JPG'
 
 const Projects = () => {
     var arr = [
@@ -26,7 +26,7 @@ const Projects = () => {
                 <div>
                     {
                         arr.map((each) => {
-                            return <a href={arr[i].href} target='_blank'><Image id={'img'+i} photo={arr[i].src} txt={arr[i++].text}/></a>
+                            return <a href={arr[i].href} target='_blank' rel="noreferrer"><Image id={'img'+i} photo={arr[i].src} txt={arr[i++].text}/></a>
                         })
                     }
                 </div>
