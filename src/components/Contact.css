@@ -18,7 +18,7 @@
     text-align:center;
     padding-top:3%;
 }
-.contact-div input[type=text], textarea, .contact-div div {
+.contact-div input[type=text],input[type=email], textarea, .contact-div div {
     background-color: #2C3031;
     padding: 12px 20px;
     margin: 8px 0;
@@ -27,12 +27,9 @@
     box-sizing: border-box;
     padding-right: 20px;
 }
-.contact-div input[type=text] {
+.contact-div input[type=text],input[type=email] {
     width: 30%;
     border: 1px solid #ccc;
-}
-.contact-div div {
-    width: 3%;
 }
 textarea {
     width: 64%;
@@ -40,6 +37,9 @@ textarea {
     border: 1px solid #ccc;
 }
 .contact-div input[type=text]::placeholder{
+    color: #ccc;
+}
+.contact-div input[type=email]::placeholder{
     color: #ccc;
 }
 .contact-div textarea::placeholder{
@@ -63,6 +63,10 @@ hr {
 .button:hover{
     color: #2C3031;
     background-color: white;
+}
+#result {
+    display: block;
+    text-align: center;
 }
 
 @media only screen and (max-width: 900px) {
