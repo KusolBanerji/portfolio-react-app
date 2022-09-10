@@ -3,11 +3,12 @@ import ResumePic from '../media_files/resume-logo.png'
 
 const Resume = () => {
     var experiences = [
-        {org: 'Persistent Systems', loc:'Pune, Maharashtra, India', duration: 'Jan 2022 - Present', role: 'UI - React Developer Intern', desc: 'Prepared User Interface with React Framework. Used React Hooks and Redux to use local component states, execute side effects and more. Developed backend server using Node Js and Express Js. Created NoSQL(MongoDb) database server using Mongoose.', tech: 'HTML, CSS, JavaScript, React Framework, Node Js, MongoDb'},
+        {org: 'Wells Fargo', loc:'Hyderabad, Telangana, India', duration: 'Aug 2022 - Present', role: 'Program Associate', desc: 'Designing and developing Pega BPM applications. Performing solution architecture within the Pega PRPC environment. Designing class structures, application frameworks, and data models. Coordinating with the project team to ensure the business architecture matches the needs of the customer. Integrating business databases, legacy systems, and web services. Troubleshooting application issues, coding bugs, and bottlenecks. Conducting system performance tests. Maintaining the security of all system applications.', tech: 'PEGA, Java, HTML, CSS, JS', src: require('../media_files/exp-logo/Wells_Fargo.png')},
+        {org: 'Persistent Systems', loc:'Pune, Maharashtra, India', duration: 'Jan 2022 - Jun 2022', role: 'UI - React Developer Intern', desc: 'Prepared User Interface with React Framework. Used React Hooks and Redux to use local component states, execute side effects and more. Developed backend server using Node Js and Express Js. Created NoSQL(MongoDb) database server using Mongoose.', tech: 'HTML, CSS, JavaScript, React Framework, Node Js, MongoDb', src: require('../media_files/exp-logo/Persistent_Systems.png')},
         {org: 'Whoogly Pvt. Ltd.', loc:'Virtual', duration: 'Aug 2020 - Sep 2020', role: 'Backend(PHP) Developer Intern', desc: 'Implemented backend server using PHP. Merged frontend design with the backend. Made database operations(CRUD) in MySQL using PHP.', tech: 'PHP, MySQL'}
     ]
     var educations = [
-        {institute: 'Academy of Technology', loc: 'West Bengal, India', duration: 'Aug 2018 - Jul 2022', degree: 'Bachelor of Technology(B. Tech.)', specialization: 'Electronics and Communication Engineering(ECE)', score: 9.35, extra: '(upto 7th Semester)'}
+        {institute: 'Academy of Technology', loc: 'West Bengal, India', duration: 'Aug 2018 - Jun 2022', degree: 'Bachelor of Technology(B. Tech.)', specialization: 'Electronics and Communication Engineering(ECE)', score: 9.37, extra: '', src: require('../media_files/edu-logo/aot.png')}
     ]
     var skills = [
         {name: 'Java', rate: 5, src: require('../media_files/skills-logo/java.png')},
@@ -47,7 +48,7 @@ const Resume = () => {
                         {
                             experiences.map((each) => <div className="experience">
                                 <div className="exp-child left">
-                                    <h3>{each.org}</h3>
+                                    <h3>{each.src && <img className="img" src={each.src} alt="Experience"/>} {each.org}</h3>
                                     <p>📍{each.loc}</p>
                                     <p>{each.duration}</p>
                                 </div>
@@ -69,7 +70,7 @@ const Resume = () => {
                         {
                             educations.map((each) => <div className="experience">
                                 <div className="exp-child left">
-                                    <h3>{each.institute}</h3>
+                                    <h3>{each.src && <img className="img" src={each.src} alt="Education"/>} {each.institute}</h3>
                                     <p>📍{each.loc}</p>
                                     <p>{each.duration}</p>
                                 </div>
