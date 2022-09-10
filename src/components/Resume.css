@@ -59,9 +59,14 @@ h2 {
 .experience {
     width: 100%;
     text-align: justify;
+    cursor: pointer;
 }
 
-.experience:hover {
+.experience img {
+    border-top: 20px;
+}
+
+.experience:hover{
     border: rgba(255, 255, 255, 0.5) solid;
     box-shadow: 5px 5px rgba(255, 255, 255, 0.5);
 }
