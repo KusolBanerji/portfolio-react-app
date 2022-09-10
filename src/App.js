@@ -12,7 +12,7 @@ const Resume = React.lazy(() => import("./components/Resume"))
 function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div Style="text-align:center;padding-top:20%"><img width="200px" height="200px" src={Loading} alt="Loading..."/></div>}>
+      <Suspense fallback={<div Style="text-align:center;padding-top:20%"><img width="200px" height="400px" src={Loading} alt="Loading..."/></div>}>
         <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
