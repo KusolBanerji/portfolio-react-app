@@ -13,6 +13,10 @@ const Contact = () => {
   const emailHandler = (e) => setEmail(e.target.value)
   const messageHandler = (e) => setMsg(e.target.value)
   
+  const setEmailManual = () => {
+    window.open('mailto:test@example.com');
+  }
+
   const sendMail = (event) => {
     event.preventDefault()
     
@@ -53,11 +57,11 @@ const Contact = () => {
           <div id="result"></div>
         </form>
         <h1>
-          <label Style="padding-left:15%;">&#128231;</label>
+          <label Style="padding-left:15%; cursor:pointer" onClick={setEmailManual}>&#128231;</label>
           <label Style="float:right;padding-right:15%;">&#128241;</label>
         </h1>
         <h3>
-          <label Style="padding-left:14%;">E-mail</label>
+          <label Style="padding-left:14%; cursor:pointer;" onClick={setEmailManual}>E-mail</label>
           <label Style="float:right;padding-right:12%;">Send Message</label>
         </h3>
       </div>
