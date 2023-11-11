@@ -11,28 +11,29 @@ const Resume = () => {
         {institute: 'Maulana Abul Kalam Azad University of Technology (WBUT)', loc: 'West Bengal, India', duration: 'Aug 2018 - Jun 2022', degree: 'Bachelor of Technology(B. Tech.)', specialization: 'Electronics and Communication Engineering(ECE)', score: 9.37, extra: '', src: require('../media_files/edu-logo/makaut.png')}
     ]
     var skills = [
+        //{name: 'Bootstrap', rate: 3, src: require('../media_files/skills-logo/bootstrap.png')}
+        //{name: 'C/C++', rate: 5, src: require('../media_files/skills-logo/c++.png')},
+        {name: 'CSS3', rate: 5, src: require('../media_files/skills-logo/css.png')},
+        //{name: 'Express JS', rate: 5, src: require('../media_files/skills-logo/express.png')},
+        //{name: 'Flask', rate: 4, src: require('../media_files/skills-logo/flask.png')},
+        {name: 'HTML', rate: 5, src: require('../media_files/skills-logo/html.png')},
         {name: 'Java', rate: 5, src: require('../media_files/skills-logo/java.png')},
         {name: 'JavaScript', rate: 5, src: require('../media_files/skills-logo/javascript.png')},
-        {name: 'Python', rate: 5, src: require('../media_files/skills-logo/python.png')},
-        //{name: 'C/C++', rate: 5, src: require('../media_files/skills-logo/c++.png')},
-        //{name: 'Flask', rate: 4, src: require('../media_files/skills-logo/flask.png')},
-        {name: 'Oracle', rate: 5, src: require('../media_files/skills-logo/oracle.png')},
         {name: 'MongoDb', rate: 5, src: require('../media_files/skills-logo/mongodb.png')},
-        //{name: 'Express JS', rate: 5, src: require('../media_files/skills-logo/express.png')},
-        {name: 'React JS', rate: 5, src: require('../media_files/skills-logo/react.png')},
         //{name: 'Node JS', rate: 5, src: require('../media_files/skills-logo/nodejs.png')},
-        {name: 'HTML', rate: 5, src: require('../media_files/skills-logo/html.png')},
-        {name: 'CSS3', rate: 5, src: require('../media_files/skills-logo/css.png')},
-        //{name: 'Bootstrap', rate: 3, src: require('../media_files/skills-logo/bootstrap.png')}
+        {name: 'Oracle', rate: 5, src: require('../media_files/skills-logo/oracle.png')},
+        {name: 'Python', rate: 5, src: require('../media_files/skills-logo/python.png')},
+        {name: 'React JS', rate: 5, src: require('../media_files/skills-logo/react.png')},
     ]
     var tools = [
-        {name: 'Visual Studio', rate: 5, src: require('../media_files/tools-logo/visualstudio.png')},
         {name: 'Eclipse', rate: 5, src: require('../media_files/tools-logo/eclipse.png')},
-        {name: 'Spyder', rate: 5, src: require('../media_files/tools-logo/spyder.png')},
-        {name: 'Jupyter Notebook', rate: 5, src: require('../media_files/tools-logo/jupyter.png')},
         {name: 'Git', rate: 5, src: require('../media_files/tools-logo/git.png')},
-        //{name: 'Robo3T', rate: 4, src: require('../media_files/tools-logo/robo3t.png')},
+        {name: 'Jupyter Notebook', rate: 5, src: require('../media_files/tools-logo/jupyter.png')},
         {name: 'Postman', rate: 4, src: require('../media_files/tools-logo/postman.png')},
+        {name: 'PEGA', rate: 3, src: require('../media_files/tools-logo/pega.png')},
+        //{name: 'Robo3T', rate: 4, src: require('../media_files/tools-logo/robo3t.png')},
+        {name: 'Spyder', rate: 5, src: require('../media_files/tools-logo/spyder.png')},
+        {name: 'Visual Studio', rate: 5, src: require('../media_files/tools-logo/visualstudio.png')},
     ]
     return (
         <div className="resume">
