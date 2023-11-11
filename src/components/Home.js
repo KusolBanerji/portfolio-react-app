@@ -7,12 +7,10 @@ const Home = () => {
       <img src={Photo} alt="Snow" id="img" />
       <div className="center">
         <h1 Style="font-size: 3vw;">
-          KUSOL <b Style="color: purple;">BANERJI</b>
+          KUSOL BANERJI
         </h1>
         <div className="typewriter">
-          <h1><span Style="color:orange;">FULL STACK</span> DEVELOPER</h1>
-          <h1><span Style="color:orange;">FRONT-END</span> SKILLS : <span Style="color:green;">REACT JS</span></h1>
-          <h1><span Style="color:orange;">BACK-END</span> SKILLS : <span Style="color:green;">JAVA, NODE JS, PYTHON</span></h1>
+          <h1 Style="color:orange;">FULL STACK DEVELOPER <br/> Key Skills :REACT JS, JAVA, NODE JS, PYTHON </h1>
         </div>
       </div>
     </div>

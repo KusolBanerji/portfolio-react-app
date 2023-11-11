@@ -17,7 +17,7 @@
   transform: translate(-50%, -50%);
 }
 .typewriter {
-	text-align: left;
+	text-align: center;
 	font-size: 0.75vw;
   height: 100%;
 }
@@ -30,7 +30,7 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  animation: typing 3.5s steps(15, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */

@@ -16,7 +16,7 @@ const AboutMe = () => {
                         <p Style="padding-right:5%;">
                             Strong in design and integration with intuitive problem-solving skills. 
                             Proficient in JAVA, PYTHON, JAVASCRIPT, SQL and NOSQL. Passionate 
-                            about implementing and launching new projects. Ability to translate business 
+                            about ARTIFICIAL INTELLIGENCE. Ability to translate business 
                             requirements into technical solutions. Continuous learner of new technologies, 
                             strategies, and tools.
                         </p>
@@ -25,7 +25,7 @@ const AboutMe = () => {
                         <h2>Personal Information</h2>
                         <p>
                             <b><u>Name</u> :</b> Kusol Banerji<br/>
-                            <b><u>Age</u> :</b> 22 Years<br/>
+                            <b><u>Age</u> :</b> {Math.floor((new Date()-new Date("1999/09/03"))/31557600000)}<br/>
                             <b><u>Residence</u> :</b> Kolkata, India<br/>
                             <b><u>Email</u> :</b> kusol.banerji100@gmail.com<br/>
                             <b><u>Phone</u> :</b> (+91) 700 301 1271<br/>
